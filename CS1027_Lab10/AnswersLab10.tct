@@ -1,0 +1,33 @@
+Answers for Lab 10
+
+1. Running times of iterative Fibonacci
+
+	n      Time
+	-------------
+	20      0ms
+	30      0ms
+	40      0ms
+	45      0ms
+	50      0ms
+
+	Running times of recursive Fibonacci
+
+	n      Time
+	-------------
+	20     0ms
+	30     5ms
+	40    303ms
+	45    3218ms
+	50   34835ms
+
+2. How many calls are made to rfib when the value of the parameter n is 2? 
+204668309
+
+3. Explain why the recursive algorithm for computing Fibonacci numbers is so slow compared with the iterative algorithm.
+iterative algoirthm uses three variables (prev, current, next) and continuously swaps the values associated with these variables (calls same portion of code over and over again)
+while recursive algorithm calls itself each time to obtain the necessary values; ie. must calculate value of first call to use to calculate value of second call, etc.
+	making it memory expensive as well and take longer
+
+4. Explain why it is difficult to design an iterative algorithm that computes the Abo series.
+Difficult because for iterative algorithm, you need to design code that will continuously repeat to achieve the needed result
+difficult to write concise algorithm when pattern uses results from past calculations
